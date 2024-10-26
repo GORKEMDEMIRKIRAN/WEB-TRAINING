@@ -1,0 +1,61 @@
+
+<!-- Linkleri kullanmamızın sebebi bir html dosyasından başka html dosyasına 
+bağlanmak için gereklidir. 
+Dosyalar arasında bağlantı sağlamak için kullanıyoruz.
+Link aracılığı ile dosyadan dosyaya geçiyoruz.
+Bunun için "a" etiketini kullanıyouruz.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Title vermekten çok önemli
+      ceo açısından önemli -->
+
+
+    <!-- "href"=hiper parametre
+    "href nereye bağlanacağımızı söylüyor." -->
+    <a href="images.html">resimler</a>
+    <br>
+    <!-- Resim dosyası içindeki araba resmini ulaşarak açar. -->
+    <a href="../images/car2.jpeg">Resim Aç</a>
+
+    <!-- Resmi dosyamıza "zip" oalrak eklersek sayfadaki bağlantıya tıklayarak indirebilir. -->
+    <a href="images.zip">Resmi indir</a>
+
+    <!-- _self = şuan tarayıcının bulunduğu sayfa oluyor.
+    _blank = yeni sekmede açmasını sağlıyoruz. -->
+    <!-- Yaptığımız link ile yeni sayfada google açacaktır. -->
+    <a href="https://www.google.com" target="_blank"></a> 
+
+    <!-- Bu kısımda ilk tanımladığız resim sayfada çıkıyor buna tıklayarak
+    yeni resme ulaşabiliriz. -->
+    <a href="../images/car.jpg" target="_blank">
+        <img src="../images/car2.jpeg" alt="">
+    </a>
+    
+    <!-- Bilgisayarım bağlı olduğu mail açıyor. -->
+    <a href="mailto:info@gmail.com">Mail Gönder</a>
+
+
+    <!-- Sayfa içindeki tıkladığımızda ona ait olan bölüme gitmesine bakalım.
+     "#" diez ile sayfa içi tanımlıyoruz.-->
+    <a href="#chapter1">Chapter_1</a>
+    <a href="#chapter2">Chapter_2</a> 
+
+    <h2 id="chapter1">chapter oner</h2>
+    <p>
+        aslgdhfgjhkgadadwwdawdawd
+    </p>
+    <h2 id="chapter2">chapter two</h2>
+    <p>
+        saafkadşwjkraflwdlwaşlidlwşidl
+    </p>
+
+
+</body>
+</html>

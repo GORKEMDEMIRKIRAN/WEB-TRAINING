@@ -1,0 +1,151 @@
+<!-- 
+YAZILIM KURSLARI
+
+    Id:1
+    Kurs adı: Komple uygulamalı web geliştirme eğitimi
+    Açıklama: Sıfırdan ileri seviye yazılı
+    Resim: https://www.alpankurslari.com.tr/wp-content/uploads/elementor/thumbs/computer-1209641_640-ohqioooyn5bcjr0xm8rkrxz0kuzk3gomc2ktds9now.jpg
+    Kategori: Web geliştirme
+
+    Id:2
+    Kurs adı: Php ile sıfırdan ileri seviye
+    Açıklama: Sıfırdan php dersleri
+    Resim: https://yazilimdersi.info/frontside/images/articles/normal/php-programming-language.png
+    Kategori: Web geliştirme
+
+    Id:3
+    Kurs Adı: Python ile sıfırdan ileri seviye
+    Açıklama: Sıfırdan ileri seviyeye python eğitimi
+    Resim: https://www.ucuncubinyil.net/wp-content/uploads/2020/07/python-kursu.jpg
+    Kategori : Programlama
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+
+
+    <!--
+     VÜcut kısmında header ile başlık oluşturduk.
+        h1  = başlık verdik.
+        nav = ile bağlantılı olan sayfaları verdik.
+            div = grupladık.
+            ul  = tablo oluşturduk.
+    Alt kısımda section ile bölümü belirleyip;
+        "aside" ile sol taraf
+        "main" ile sağ tarafı oluşturacağız.
+     -->
+    
+
+     
+    <!-- Bu kısımda resimleri link olarak ekledik isterdek tıklayıp gidebiliriz. -->
+    <!--
+    <a href="https://www.alpankurslari.com.tr/wp-content/uploads/elementor/thumbs/computer-1209641_640-ohqioooyn5bcjr0xm8rkrxz0kuzk3gomc2ktds9now.jpg">Link-1</a>
+    <a href="https://yazilimdersi.info/frontside/images/articles/normal/php-programming-language.png">Link-2</a>
+    <a href="https://www.ucuncubinyil.net/wp-content/uploads/2020/07/python-kursu.jpg">Link-3</a>
+     -->
+
+
+
+    <header>
+        <nav>
+
+        </nav>
+        <div>
+            <h1>FİLM SAYFASI</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita,
+                 ducimus ipsum doloremque ea beatae iusto ut quidem excepturi, impedit 
+                 nam. Nobis magnam voluptatem praesentium. Laudantium autem eum illum quasi!
+            </p>
+        </div>
+    </header>
+    
+    <section id="alt gövde">
+
+        <aside>
+
+        </aside>
+
+
+        
+        <main>
+            <!-- Cellpadding yazıların tablo içinden uzkalığını veriyor.
+             Border = tablo kalınlığını veriyor.
+             style=width ise ekrana sığma oranını veriyor. -->
+            <table id="new" style="width:90%" border="5" cellpadding="10">
+                <caption>Training Information</caption>
+                <colgroup>
+                    <!-- Bu kısımda span ile hangi sütunu hangi renge boyaytacağımızı söyledik. -->
+                    <col span="1" style="background-color:blueviolet">
+                </colgroup>
+                <!-- Bu kısımda stille satıra yükseklik verdik. -->
+                <tr style="height:40px">
+                    <th>Id :</th>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>Kurs adı :</th>
+                    <td>Komple uygulamalı web geliştirme eğitimi</td>
+                    <td>Php ile sıfırdan ileri seviye</td>
+                    <td>Python ile sıfırdan ileri seviye</td>
+                </tr>
+                <tr>
+                    <th>Açıklama:</th>
+                    <td>Sıfırdan ileri seviye yazılı</td>
+                    <td>Sıfırdan php dersleri</td>
+                    <td>Sıfırdan ileri seviyeye python eğitimi</td>
+                </tr>
+                <tr>
+                    <th>Resim:</th>
+                    <td>
+                        <img src="https://www.alpankurslari.com.tr/wp-content/uploads/elementor/thumbs/computer-1209641_640-ohqioooyn5bcjr0xm8rkrxz0kuzk3gomc2ktds9now.jpg"
+                         alt="1"
+                         style="width:70px;height:30px;float:right;">
+
+                         <a href="https://www.alpankurslari.com.tr/wp-content/uploads/elementor/thumbs/computer-1209641_640-ohqioooyn5bcjr0xm8rkrxz0kuzk3gomc2ktds9now.jpg">Link-1</a>
+                    </td>
+                    <td>
+                        <img src="https://yazilimdersi.info/frontside/images/articles/normal/php-programming-language.png"
+                         alt="2"
+                         style="width:70px;height:30px;float:right;">
+
+                         <a href="https://yazilimdersi.info/frontside/images/articles/normal/php-programming-language.png">Link-2</a>
+
+                    </td>
+                    <td>
+                        <img src="https://www.ucuncubinyil.net/wp-content/uploads/2020/07/python-kursu.jpg" 
+                        alt="3"
+                        style="width:70px;height:30px;float:right;">
+                        <a href="https://www.ucuncubinyil.net/wp-content/uploads/2020/07/python-kursu.jpg">Link-3</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Kategori:</th>
+                    <td>Web geliştirme</td>
+                    <td>Web geliştirme</td>
+                    <td>Programlama</td>
+                </tr>
+            </table>
+        </main>
+
+    </section>
+
+
+
+
+    <footer>
+        Firmanın tüm hakları saklıdır.
+    </footer>
+
+
+ </body>
+ </html>
+

@@ -1,0 +1,61 @@
+
+<!-- Bu kısımda görsel eklemeyi göreceğiz. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <style>
+        body {
+          background-image: url("https://cdn.pixabay.com/photo/2024/04/04/03/08/ai-generated-8674235_1280.png");
+          background-size: cover; /* İsteğe bağlı: resmi tam sayfa kaplamak için */
+          background-repeat: repeat-x; /* İsteğe bağlı: resmi tekrarlamamak için */
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- Alt etiketi ile araçtırma ve uygulamalarda aratınca çıkmasını sağlamak için vardır. -->
+     <!-- Bu kısımda "images" klasörü içine ulaştık. Başka yol olarak
+     "../" diyerek bir üst dizine çık anlamına gelen ifadeyi ekleyerek
+     sağlayabiliz. -->
+
+    <img src="images/car2.jpeg" alt="Ferrari">
+
+    <!-- Resim adresini kopyala diyerek uzantısını alabilirsin. -->
+     <!-- Bu kısımda yükseklik ve genişlik vererek ayarlaya biliriz ama tavsiye
+     birini verirsek diğerini vermeyelim yoksa resim kalitesi bozuluyor. -->
+
+     <!-- Resim boyutu önemli "jpeg" daha az yer kaplar optimizasyon için önemli -->
+
+
+     <!-- Bu kısımda ise "html image maps kullalım" -->
+    <img src="https://cdn.pixabay.com/photo/2024/04/04/03/08/ai-generated-8674235_1280.png"
+     alt="cars_mouse" usemap="#mouse" width="500" height="200">
+
+     <map name="mouse">
+        <area shape="rect" coords="50,70,500,600" alt="car" href="#images/car2.jpeg" onclick="myFunction()">
+     </map>
+    
+     <script>
+        function myFunction(){
+            alert("You clicked.");
+        }
+     </script>
+     <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+
+    
+
+    
+
+
+
+</body>
+</html>

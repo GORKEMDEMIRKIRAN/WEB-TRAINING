@@ -1,0 +1,106 @@
+
+
+
+<!--
+===========================================================================
+ Bu kısımda tabloları göreceğiz.
+
+Tablo iskelet;
+
+
+<tr>           "table row" demektir.Satırları temsil eder.
+    <td></td>   Stünları temsil eder.
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <th></th>   "table head" tablonun başlığını ifade ediyor.
+    <th></th>
+    <th></th>
+</tr>
+===========================================================================
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Seri Numarası</th>
+        <th>Versiyonu</th>
+        <th>Fiyatı</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>iphone 13</td>
+        <td>15000</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>iphone 14</td>
+        <td>16000</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>iphone 15</td>
+        <td>17000</td>
+    </tr>
+</table>
+
+
+<!--
+===========================================================================
+ Bu kısımda satır ve sütün birleştirmeye bakıyoruz.
+ rowspan   // satır birleştirir.
+ colspan   // sütun birleştirir.
+
+ width="100%" sayfanın tamamını kaplıyor.
+ cellpadding = hücre içindeki yazıların mesafesini ayarlıyoruz.
+
+ //"border" kırmızı olmasının sebebi yeni sayfa tasarımlarında kullanılmaması
+ // yeni sayfalar için css kullanılmaktadır.
+ ===========================================================================
+  -->
+
+<table border="1" width="100%" cellpadding="10">
+    <tr>
+        <th>Seri Numarası</th>
+        <th>Model</th>
+        <th>Fiyatı</th>
+        <th>Büyüklük</th>
+        <th>Versiyonu</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>iphone 13</td>
+        <td>15000</td>
+        <td>45</td>
+        <td>32</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td rowspan="2">iphone 14</td>
+        <td>16000</td>
+        <td colspan="2">54 - 33</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>17000</td>
+        <td>23</td>
+        <td>34</td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+
+
+

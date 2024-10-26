@@ -1,0 +1,115 @@
+
+<!-- 
+
+ *******************************************************************
+ Bu kısımda semantic olan 
+    <form>
+    <table>
+    <article>
+*******************************************************************
+
+Bunlar arama motorlarında aratılan kelimelere göre yönlendiriyor.
+
+    <header> = bu kısım uygulamanın başlık kısmı oluyor. 
+    <nav>    = navigasyon yani linklerin barındığı alandır.
+    <section> = bir mantığı yok "div" tanımlamış gibi kullanıyoruz.
+    <article> = makale kısmı
+    < aside > = yan menü kısmı
+    <footer>  = site hakkında açıklamaların olduğu kısım
+
+*******************************************************************
+    
+    
+-->
+
+<!--
+
+Bu kısımda hepsiburada gibi bölümleri body-header kısmında tanımladık.
+Header kısımda başlıkları liste olarak tanımladık.
+"aside"=yan menü kısmında kategorileri tanımladık.
+"aside" içinde ise hmtl nedir gibi başlıkları "nav" navigasyon olarak tanımladık.
+"main" başlık içindede "article" yani semantik olamayacak şekilde gruplayarak
+başlık kısmını tanımlamış olduk.
+"section" tanımlayıp içine "aside" ve "main" alırsak;sol taraf "aside" sağ taraf "main" olur.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">AnaSayfa</a></li>
+                <li><a href="#">Kurslar</a></li>
+                <li><a href="#">Makaleler</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+
+        <h2>Kategoriler</h2>
+        <nav>
+            <h3>Html</h3>
+            <ul>
+                <li a href="#">Html Nedir ?</li>
+                <li a href="#">Html Sayfa Tasarımı</li>
+            </ul>
+        </nav>
+        
+
+        <nav>
+            <h3>Css</h3>
+            <ul>
+                <li a href="#">Css Nedir ?</li>
+                <li a href="#">Css Sayfa Tasarımı</li>
+            </ul>
+        </nav>
+
+    </aside>
+    
+    <main>
+        <h1>En çok okunanlar</h1>
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Vero consequuntur commodi nisi et quam incidunt ipsum vitae
+             dolorum porro. Consequatur doloremque quos nulla aperiam rem
+              optio ea voluptate dolorem obcaecati!
+        </p>
+        <div id="all-articles">
+            <!--Makaleler article içinde tanımlanabilir-->
+            <article>
+                <h2>Html Nedir ?</h2>
+                <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Veniam at, nemo animi possimus, repellat ratione quidem 
+                magni voluptas dolorum, cupiditate tenetur autem deleniti
+                 adipisci numquam dolore saepe voluptates! Facilis, quaerat.
+                </p>
+                <p>
+                Görkem tarafından <time datetime="2025-01-01 20:00">2025 ocak</time> ayında yayınlandı.
+                </p>
+            </article>
+
+        </div>
+    </main>
+    
+    <footer>
+        Tüm hakları saklıdır.
+    </footer>
+
+</body>
+</html>
+
+

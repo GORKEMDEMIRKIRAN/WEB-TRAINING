@@ -1,0 +1,77 @@
+
+<!-- Bu kısımda listeleri göreceğiz.
+
+Listeler sıralı ve sırasız olarak ikiye ayırılıyor.
+
+
+Sıralı = <ol></ol> = order list anlamına geliyor.
+    Başında nokta ve boş olan alt alta değerler alır.
+    <ol>
+        <li></li>
+    </ol>
+    Kullanım şekli
+
+
+Sırasız = <ul></ul> 
+    Başında numara,roma rakamı gibi değerler alır.
+    <ul>
+        <li></li>
+    </ul>
+    Kullanım şekli
+
+
+Description List
+    Bu alt alta tanımlamak için kullanırız.
+    <dl>
+        <dt></dt>
+        <dd></dd>
+    </dl>
+    Kullanım şekli -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Sırasız liste -->
+    <!-- İç içe yazarak alt liste olarak tanımlayabiliriz. -->
+    <!-- style= css öğreneceğiz başındaki değerleri belli ettik. -->
+
+    <ul style="list-style-type: circle">
+        <li>Etiket 1</li>
+        <li>Etiket 2</li>
+        <li>Etiket 3
+            <ul>
+                <li>Etiket 3.1</li>
+                <li>Etiket 3.2</li>
+                <li>Etiket 3.3</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- Sıralı liste -->
+     <!-- type=sıralama türünü ifade eder.
+     start=kaçtan başlayacağını ifafe eder. -->
+    <ol type="A" start="5">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+
+    <!-- Description list -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Html Nedir ?</dd>
+        <dd>Html Heading</dd>
+    </dl>
+
+
+    
+</body>
+</html>
