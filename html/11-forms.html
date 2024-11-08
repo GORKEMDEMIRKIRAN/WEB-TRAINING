@@ -1,0 +1,123 @@
+
+<!-- 
+
+ Bu bölümde html "forms" göreceğiz.
+
+  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Forms Page
+    </title>
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <div>
+                <table>
+
+                </table>
+            </div>
+        </nav>
+    </header>
+    
+
+    <div>
+        <aside>
+
+        </aside>
+        <main>
+            <article>
+                <section>
+                    <h2>Chapter1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Ipsam atque odio architecto dolore repellendus a illo
+                          cum, earum aliquid error quibusdam, totam ex dicta 
+                          quaerat. Sunt deserunt incidunt at harum.
+                    </p>
+                </section>
+            </article>
+            <form action="personel apply">
+                
+                <!--
+                    input text türü inline eleman yan yana geliyorlar.
+                    <div> ile bölüm oluşturarak alt alta getirdik.
+                         -->
+                
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname">
+                </div>
+               <div>
+                    <label for="parola">Parola:</label>
+                    <input type="password" id="parola">
+               </div> 
+                <div>
+                    <label for="introduction">Kendini Anlat</label>
+                    <textarea id="introduction" cols="40"></textarea>
+                </div>
+                <div>
+                    <p>En sevdiğin programlama dili</p>
+                    <input type="radio" id="html" name="programming">
+                    <label for="html">html</label >
+                    <input type="radio" id="css" name="programming">
+                    <label for="css">CSS</label>
+                    <input type="radio" id="javascript" name="programming">
+                    <label for="javascript">javascript</label>
+                </div>
+                <div>
+                    <p>En sevdiğin programlama dili</p>
+                    <input type="checkbox" id="html2">
+                    <label for="html2">HTML</label>
+                    <input type="checkbox" id="CSS2">
+                    <label for="CSS2">CSS</label>
+                    <input type="checkbox" id="javascript2">
+                    <label for="javascript2">javascript</label>
+                </div>
+               <div>
+                    <label for="cities">Şehirler</label>
+                    <select id="cities">
+                        <option value="41">Kocaeli</option>
+                        <option value="34">İstanbul</option>
+                        <option value="35">İzmir</option>
+                    </select>
+               </div> 
+               <div>
+                    <label for="eposta">Email</label>
+                    <input type="email" id="eposta">
+               </div>
+               <div>
+                    <label for="birthday">Birthday</label>
+                    <input type="date" id="birthday" name="birthday">
+               </div>
+
+                <button type="submit">Kaydet</button>
+                <button type="reset">Temizle</button> 
+                
+                
+                
+
+            </form>
+
+        </main>
+    </div>
+
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

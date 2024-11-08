@@ -1,0 +1,46 @@
+
+<!-- 
+
+Bir html sayfası içerisine başka bir html sayfası yerleştirmek istiyorsak
+"Iframe" kullanabiliriz.
+
+frameborder="0" = çerçeve kenarlığı
+
+src  = aynı dosya yada başka dosya içerisinden kaynak yolunu tanımlayabiliriz.
+Src bize html sayfası içinde hangi html sayfası açılacak onu gösteriyor.
+İstersek url verebiliriz.
+
+Sayfa içinde belirli boyutlarda diğer sayfa gelir.Bunları bizde girebiliriz.
+title ile başlık vebiliriz.ekran üzerinde görünmez ama ne için oluşturulduğunu görebiliriz.
+
+
+    IFRAME KULLANIMI
+      <iframe src="" frameborder="0" width="100" height="100" title="başlık"></iframe>
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Burada "href" ile gitmek istediği hedefi belirterek iframe içine 
+    linki atarak gönderdik.
+     -->
+    <iframe src="11-forms.html"
+        name="fm"
+        frameborder="2"
+        width="300" 
+        height="300"
+        title="formlar"></iframe>
+
+    <p>
+        <a href="https://www.google.com" target="fm">Linke Git</a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,170 @@
+
+
+<!-- Bu kısımda form ile ilgili örnek bir çalışma yapacağız. -->
+
+<!-- 
+Bu kısımda tabloları kullanarak bir form oluşturuduk.
+Bu formda forms türlerini kullandık.
+Bunlar "checkbox","radio button","text","eposta","dikey seçenek","button"
+Satır birleştirme yaptık.
+Tablo özellikleri için ise "css" kullandık. 
+"Input" içinde (placeholder) text kutularının içine yazı yazmamızı sağlar.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemen Üye Ol</title>
+</head>
+<body>
+        <!-- Tabloya class ile ıd vererek style içinde o isimli tabloya ait özellikleri
+        değiştirebiliyoruz. -->
+    <style>
+        .tablo-1 table,.tablo-1 tr{
+            border-bottom: 1px solid black;
+        }
+        .tablo-1 th{
+            text-align: left;
+            background-color: bisque;
+        }
+        .tablo-2 th{
+            text-align: left;
+        }
+    </style>
+
+
+    <header>
+        <!-- Bu kısımda alt çizgiyi oluşturmak için "<hr>" kullanabiliriz. -->
+        <table style="width:100%" class="tablo-1">
+            <tr>
+                <th>
+                    <h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
+                </th>
+            </tr>
+        </table>
+    </header>
+
+
+    <div>
+        <main>
+            <table style="width:60%" border="2" class="tablo-2">
+
+                <tr>
+                    <th colspan="2">
+                        <h2>Hesap Bilgileriniz</h2>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>Kullanıcı Adı :</th>
+                    <td>
+                        <input type="text" id="name" placeholder="Kullanıcı adı giriniz">
+                        <label for="name"></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>E-posta :</th>
+                    <td>
+                        <input type="email" id="posta" placeholder="E-posta giriniz">
+                        <label for="posta"></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Parola :</th>
+                    <td>
+                        <input type="pawword" id="parola" placeholder="Parola giriniz">
+                        <label for="parola"></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">
+                        <h2>Kşisel Bilgileriniz</h2>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>Adınız :</th>
+                    <td>
+                        <input type="text" id="user_name" placeholder="Kullanıcı adı giriniz">
+                        <label for="user_name"></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Soyadınız :</th>
+                    <td>
+                        <input type="text" id="user_surname" placeholder="Kullanıcı soyadı giriniz">
+                        <label for="user_surname"></label>
+                    </td>
+                </tr>
+
+                <tr>
+                   <th>Şehir :</th>
+                   <td>
+                        <label for="city"></label>
+                        <select id="city">
+                            <option value="1">Ankara</option>
+                            <option value="2">İstanbul</option>
+                            <option value="3">İzmir</option>
+                        </select>
+                   </td>
+                </tr>
+
+                <tr>
+                    <th>Cinsiyet :</th>
+                    <td>
+                        <!-- 
+                        Bu şekilde her iki radiobutton seçilir.
+
+                        <input type="radio" id="erkek">
+                        <label for="erkek">Erkek</label>
+                        <input type="radio" id="kadın">
+                        <label for="kadın">Kadın</label>
+
+                        Bu şekilde ise sadece biri seçilir.
+                        -->
+                        <input type="radio" name="cinsiyet">Erkek
+                        <input type="radio" name="cinsiyet">Kadın
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Hobileriniz :</th>
+                    <td>
+                        <input type="checkbox" id="sinema">
+                        <label for="sinema">Sinema</label>
+                        <input type="checkbox" id="gezmek">
+                        <label for="gezmek">Gezmek</label>
+                        <input type="checkbox" id="Spor">
+                        <label for="Spor">Spor</label>
+                        <input type="checkbox" id="Kitap">
+                        <label for="Kitap">Kitap</label>
+                        
+                        <!-- 
+                        Bu şekilde de girebiliriz.
+
+                        <input type="checkbox">Sinem
+                        <input type="checkbox">Gezmek
+                        <input type="checkbox">Spor
+                        <input type="checkbox">Kitap 
+                        -->
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Kaydet</button>
+                    </td>
+                </tr>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

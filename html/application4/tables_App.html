@@ -43,7 +43,7 @@ YAZILIM KURSLARI
      -->
     
 
-     
+
     <!-- Bu kısımda resimleri link olarak ekledik isterdek tıklayıp gidebiliriz. -->
     <!--
     <a href="https://www.alpankurslari.com.tr/wp-content/uploads/elementor/thumbs/computer-1209641_640-ohqioooyn5bcjr0xm8rkrxz0kuzk3gomc2ktds9now.jpg">Link-1</a>
@@ -79,6 +79,23 @@ YAZILIM KURSLARI
              Border = tablo kalınlığını veriyor.
              style=width ise ekrana sığma oranını veriyor. -->
             <table id="new" style="width:90%" border="5" cellpadding="10">
+                <style>
+                    table{
+                        border:2px solid green;
+                        border-style: dashed;
+                    }
+                    th,td{
+                        border:3px solid black;
+                        border-radius:15px;
+                    }
+                    td:nth-child(even){
+                        background-color: purple;
+                    }
+                    body{
+                        background-image:url("https://cdn.pixabay.com/photo/2024/04/04/03/08/ai-generated-8674235_1280.png");
+                        background-repeat: no-repeat;
+                    }
+                </style>
                 <caption>Training Information</caption>
                 <colgroup>
                     <!-- Bu kısımda span ile hangi sütunu hangi renge boyaytacağımızı söyledik. -->
